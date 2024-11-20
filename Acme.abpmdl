@@ -1,0 +1,71 @@
+{
+  "folders": {
+    "items": {
+      "src": {
+        "items": {
+          "Server": {},
+          "Shared": {},
+          "Client": {}
+        }
+      }
+    }
+  },
+  "packages": {
+    "Acme.Protocol.Shared": {
+      "path": "src/Shared/Acme.Protocol.Shared/Acme.Protocol.Shared.abppkg",
+      "folder": "src/Shared"
+    },
+    "Acme.Core.Shared": {
+      "path": "src/Shared/Acme.Core.Shared/Acme.Core.Shared.abppkg",
+      "folder": "src/Shared"
+    },
+    "Acme.Server.Domain.Shared": {
+      "path": "src/Server/Acme.Server.Domain.Shared/Acme.Server.Domain.Shared.abppkg",
+      "folder": "src/Server"
+    },
+    "Acme.Server.Domain": {
+      "path": "src/Server/Acme.Server.Domain/Acme.Server.Domain.abppkg",
+      "folder": "src/Server"
+    },
+    "Acme.Server.Application.Contracts": {
+      "path": "src/Server/Acme.Server.Application.Contracts/Acme.Server.Application.Contracts.abppkg",
+      "folder": "src/Server"
+    },
+    "Acme.Server.Application": {
+      "path": "src/Server/Acme.Server.Application/Acme.Server.Application.abppkg",
+      "folder": "src/Server"
+    },
+    "Acme.Server.EntityFrameworkCore": {
+      "path": "src/Server/Acme.Server.EntityFrameworkCore/Acme.Server.EntityFrameworkCore.abppkg",
+      "folder": "src/Server"
+    },
+    "Acme.Server.HttpApi.Host": {
+      "path": "src/Server/Acme.Server.HttpApi.Host/Acme.Server.HttpApi.Host.abppkg",
+      "folder": "src/Server"
+    },
+    "Acme.Client.Domain.Shared": {
+      "path": "src/Client/Acme.Client.Domain.Shared/Acme.Client.Domain.Shared.abppkg",
+      "folder": "src/Client"
+    },
+    "Acme.Client.Domain": {
+      "path": "src/Client/Acme.Client.Domain/Acme.Client.Domain.abppkg",
+      "folder": "src/Client"
+    },
+    "Acme.Client.Protocol": {
+      "path": "src/Client/Acme.Client.Protocol/Acme.Client.Protocol.abppkg",
+      "folder": "src/Client"
+    },
+    "Acme.Client.Application.Contracts": {
+      "path": "src/Client/Acme.Client.Application.Contracts/Acme.Client.Application.Contracts.abppkg",
+      "folder": "src/Client"
+    },
+    "Acme.Client.Application": {
+      "path": "src/Client/Acme.Client.Application/Acme.Client.Application.abppkg",
+      "folder": "src/Client"
+    },
+    "Acme.Client.Cli": {
+      "path": "src/Client/Acme.Client.Cli/Acme.Client.Cli.abppkg",
+      "folder": "src/Client"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "b39624ee-9e05-47a3-ba74-0f56bed1aa70",
+  "template": "empty",
+  "options": {
+    "httpRequests": {
+      "ignoredUrls": [
+        "^/metrics$"
+      ]
+    }
+  },
+  "modules": {
+    "Acme": {
+      "path": "Acme.abpmdl"
+    }
+  }
+}

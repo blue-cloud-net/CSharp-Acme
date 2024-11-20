@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<Import Project="..\..\..\common.props" />
+
+	<PropertyGroup>
+		<RootNamespace>Acme</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Acme.Protocol.Shared\Acme.Protocol.Shared.csproj" />
+	</ItemGroup>
+
+</Project>
