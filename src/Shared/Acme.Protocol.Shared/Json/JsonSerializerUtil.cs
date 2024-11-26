@@ -8,7 +8,7 @@ public class JsonSerializerUtil
     /// <summary>
     /// 获取默认的Json序列化选项
     /// </summary>
-    public static JsonSerializerOptions DefaultOptions => GetDefaultOptions();
+    public static JsonSerializerOptions DefaultOptions = GetDefaultOptions();
 
     /// <summary>
     /// 获取默认的Json序列化选项
@@ -19,6 +19,11 @@ public class JsonSerializerUtil
         var option = new JsonSerializerOptions(JsonSerializerDefaults.Web)
         {
             DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
+            Converters =
+            {
+                new JsonDisplayNameEnumConverter(),
+                new JsonConverterByteArrayBase64UrlString(),
+            },
         };
 
         return option;

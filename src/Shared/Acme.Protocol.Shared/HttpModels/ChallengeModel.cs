@@ -4,7 +4,7 @@ namespace Acme.HttpModels;
 
 /// <summary>
 /// Acme挑战响应模型
-/// <see href="https://tools.ietf.org/html/rfc8555#section-7.1.5"/>
+/// <see href="https://datatracker.ietf.org/doc/html/rfc8555#section-7.1.5"/>
 /// </summary>
 public class ChallengeModel
 {

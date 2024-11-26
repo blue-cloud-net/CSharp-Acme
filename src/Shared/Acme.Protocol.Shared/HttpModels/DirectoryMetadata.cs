@@ -2,7 +2,7 @@ namespace Acme.HttpModels;
 
 /// <summary>
 /// Acme目录元数据响应模型
-/// https://tools.ietf.org/html/rfc8555#section-7.1.1
+/// https://datatracker.ietf.org/doc/html/rfc8555#section-7.1.1
 /// </summary>
 public class DirectoryMetadata
 {

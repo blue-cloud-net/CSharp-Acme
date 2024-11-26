@@ -1,18 +1,18 @@
-namespace Acme.HttpModels;
+namespace Acme.Crypto;
 
 /// <summary>
 /// Acme的Jws的payload部分
 /// </summary>
 /// <typeparam name="TPayload"></typeparam>
-public class AcmeJwsPayloadModel<TPayload>
+public class AcmeJwsPayload<TPayload>
 {
     /// <summary>
     /// 构造函数
     /// </summary>
     /// <param name="value"></param>
-    public AcmeJwsPayloadModel(TPayload value)
+    public AcmeJwsPayload(TPayload value)
     {
-        Value = value;
+        this.Value = value;
     }
 
     /// <summary>

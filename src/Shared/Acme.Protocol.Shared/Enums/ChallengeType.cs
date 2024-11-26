@@ -36,7 +36,7 @@ public enum ChallengeType
     /// tls-alpn-01挑战，需要在TLS握手中添加指定内容
     /// <see href="https://www.rfc-editor.org/rfc/rfc8737.html#name-acme-validation-method"/>
     /// </summary>
-    [Display(Name = "dnstls-alpn-01")]
+    [Display(Name = "tls-alpn-01")]
     TlsAlpn01 = 5,
 
     /// <summary>

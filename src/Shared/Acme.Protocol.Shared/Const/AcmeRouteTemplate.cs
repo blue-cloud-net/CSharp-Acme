@@ -3,7 +3,7 @@ namespace Acme.Const;
 /// <summary>
 /// 路由模板
 /// </summary>
-public class RouteTemplate
+public class AcmeRouteTemplate
 {
 #pragma warning disable CS1591 // 缺少对公共可见类型或成员的 XML 注释
     public const string GetDirectory = "directory";

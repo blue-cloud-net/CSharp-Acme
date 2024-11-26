@@ -5,7 +5,7 @@ using Microsoft.Extensions.Localization;
 namespace Acme.Exceptions;
 
 /// <summary>
-/// Acme 异常
+/// Acme异常
 /// </summary>
 
 public class AcmeException : Exception
@@ -17,7 +17,7 @@ public class AcmeException : Exception
     protected AcmeException(string errorType)
         : base()
     {
-        ErrorType = errorType;
+        this.ErrorType = errorType;
     }
 
     /// <summary>
@@ -25,10 +25,10 @@ public class AcmeException : Exception
     /// </summary>
     /// <param name="errorType"></param>
     /// <param name="message"></param>
-    protected AcmeException(string errorType, string message)
+    public AcmeException(string errorType, string message)
         : base(message)
     {
-        ErrorType = errorType;
+        this.ErrorType = errorType;
     }
 
     /// <summary>
@@ -37,10 +37,10 @@ public class AcmeException : Exception
     /// <param name="errorType"></param>
     /// <param name="message"></param>
     /// <param name="exception"></param>
-    protected AcmeException(string errorType, string message, Exception exception)
+    public AcmeException(string errorType, string message, Exception exception)
         : base(message, exception)
     {
-        ErrorType = errorType;
+        this.ErrorType = errorType;
     }
 
     /// <summary>
@@ -51,7 +51,7 @@ public class AcmeException : Exception
     /// <summary>
     /// 错误类型
     /// </summary>
-    public virtual string ErrorType { get; } = string.Empty;
+    public virtual string ErrorType { get; } = String.Empty;
 
     /// <summary>
     /// AcmeError <see href="https://datatracker.ietf.org/doc/html/rfc8555#section-6.7"/>
@@ -59,13 +59,13 @@ public class AcmeException : Exception
     /// <returns></returns>
     public virtual AcmeError GetHttpError(IStringLocalizer<AcmeResource> localizer)
     {
-        if (string.IsNullOrWhiteSpace(Message))
+        if (String.IsNullOrWhiteSpace(this.Message))
         {
-            return new AcmeError($"{UrnBase}:{ErrorType}", localizer[ErrorType]);
+            return new AcmeError($"{this.UrnBase}:{this.ErrorType}", localizer[this.ErrorType]);
         }
         else
         {
-            return new AcmeError($"{UrnBase}:{ErrorType}", localizer[Message]);
+            return new AcmeError($"{this.UrnBase}:{this.ErrorType}", localizer[this.Message]);
         }
     }
 }
