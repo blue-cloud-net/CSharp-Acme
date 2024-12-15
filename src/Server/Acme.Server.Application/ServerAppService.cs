@@ -6,6 +6,6 @@ public abstract class ServerAppService : ApplicationService
 {
     protected ServerAppService()
     {
-        ObjectMapperContext = typeof(ServerApplicationModule);
+        this.ObjectMapperContext = typeof(ServerApplicationModule);
     }
 }

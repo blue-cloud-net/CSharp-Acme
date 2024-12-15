@@ -1,17 +1,13 @@
 using Acme.Server.EntityFrameworkCore;
-using System;
-using System.Linq;
-using Microsoft.AspNetCore.Builder;
+
 using Microsoft.AspNetCore.Cors;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
+using Microsoft.OpenApi.Models;
+
 using Volo.Abp;
 using Volo.Abp.AspNetCore.Mvc;
+using Volo.Abp.AspNetCore.Serilog;
 using Volo.Abp.Autofac;
 using Volo.Abp.Modularity;
-using Volo.Abp.AspNetCore.Serilog;
-using Microsoft.OpenApi.Models;
 using Volo.Abp.Swashbuckle;
 
 namespace Acme.Server;
@@ -32,8 +28,8 @@ public class ServerHttpApiHostModule : AbpModule
     {
         var configuration = context.Services.GetConfiguration();
 
-        ConfigureCors(context, configuration);
-        ConfigureSwagger(context, configuration);
+        this.ConfigureCors(context, configuration);
+        this.ConfigureSwagger(context, configuration);
     }
 
     private void ConfigureCors(ServiceConfigurationContext context, IConfiguration configuration)
@@ -67,7 +63,7 @@ public class ServerHttpApiHostModule : AbpModule
         context.Services.AddAbpSwaggerGen(
             options =>
             {
-                options.SwaggerDoc("v1", new OpenApiInfo {Title = "Acme.Server.HttpApi.Host API", Version = "v1"});
+                options.SwaggerDoc("v1", new OpenApiInfo { Title = "Acme.Server.HttpApi.Host API", Version = "v1" });
                 options.DocInclusionPredicate((docName, description) => true);
                 options.CustomSchemaIds(type => type.FullName);
             });
@@ -91,7 +87,7 @@ public class ServerHttpApiHostModule : AbpModule
         app.UseSwagger();
         app.UseAbpSwaggerUI(options =>
         {
-           options.SwaggerEndpoint("/swagger/v1/swagger.json", "Acme.Server.HttpApi.Host API");
+            options.SwaggerEndpoint("/swagger/v1/swagger.json", "Acme.Server.HttpApi.Host API");
         });
         app.UseAuditing();
         app.UseAbpSerilogEnrichers();
