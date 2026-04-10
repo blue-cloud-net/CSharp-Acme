@@ -1,0 +1,17 @@
+{
+    "dotnet.defaultSolution": "acme.sln",
+    "dotnet.automaticRestore": true,
+    "editor.formatOnSave": true,
+    "files.insertFinalNewline": false,
+    "files.eol": "\n",
+    "files.exclude": {
+        "**/.vshistory": true,
+        "**/bin": true,
+        "**/obj": true
+    },
+    "search.exclude": {
+        "**/.vshistory": true,
+        "**/bin": true,
+        "**/obj": true
+    }
+}
