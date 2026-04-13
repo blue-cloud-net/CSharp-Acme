@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<root>
+    <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+        <xsd:element name="root" msdata:IsDataSet="true">
+            
+        </xsd:element>
+    </xsd:schema>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    
+    <!-- BCSignerFactory -->
+    <data name="AlgorithmCannotBeEmpty" xml:space="preserve">
+        <value>Algorithm cannot be empty or whitespace.</value>
+    </data>
+    <data name="UnsupportedJwsAlgorithm" xml:space="preserve">
+        <value>Unsupported JWS algorithm: {0}</value>
+    </data>
+    <data name="UnsupportedAlgorithm" xml:space="preserve">
+        <value>Unsupported algorithm '{0}'.</value>
+    </data>
+    
+    <!-- DirectoryUrlNormalizer -->
+    <data name="UrlCannotBeEmpty" xml:space="preserve">
+        <value>URL cannot be empty</value>
+    </data>
+    <data name="InvalidUrlFormat" xml:space="preserve">
+        <value>Invalid URL format</value>
+    </data>
+    
+    <!-- OctJsonWebKey -->
+    <data name="ComputeThumbprintMissingKty" xml:space="preserve">
+        <value>Compute thumbprint failed: missing required key type property 'kty'.</value>
+    </data>
+    <data name="ComputeThumbprintMissingK" xml:space="preserve">
+        <value>Compute thumbprint failed: missing required symmetric key parameter 'k'.</value>
+    </data>
+    <data name="SignDataCannotBeEmpty" xml:space="preserve">
+        <value>Sign failed: data to sign cannot be empty.</value>
+    </data>
+    <data name="SignMissingK" xml:space="preserve">
+        <value>Sign failed: missing required symmetric key parameter 'k'.</value>
+    </data>
+    <data name="VerifyDataCannotBeEmpty" xml:space="preserve">
+        <value>Verify signature failed: original data cannot be empty.</value>
+    </data>
+    <data name="VerifySignatureCannotBeEmpty" xml:space="preserve">
+        <value>Verify signature failed: signature data cannot be empty.</value>
+    </data>
+    <data name="VerifyMissingK" xml:space="preserve">
+        <value>Verify signature failed: missing required symmetric key parameter 'k'.</value>
+    </data>
+    
+    <!-- RsaJsonWebKey -->
+    <data name="RsaComputeThumbprintMissingKty" xml:space="preserve">
+        <value>Compute thumbprint failed: missing required key type property 'kty'.</value>
+    </data>
+    <data name="RsaComputeThumbprintMissingN" xml:space="preserve">
+        <value>Compute thumbprint failed: missing required key parameter 'n' (modulus).</value>
+    </data>
+    <data name="RsaComputeThumbprintMissingE" xml:space="preserve">
+        <value>Compute thumbprint failed: missing required key parameter 'e' (public exponent).</value>
+    </data>
+    <data name="RsaSignDataCannotBeEmpty" xml:space="preserve">
+        <value>Data to sign cannot be empty.</value>
+    </data>
+    <data name="RsaSignMissingN" xml:space="preserve">
+        <value>Generate signature failed: missing required private key parameter 'n' (modulus).</value>
+    </data>
+    <data name="RsaSignMissingE" xml:space="preserve">
+        <value>Generate signature failed: missing required private key parameter 'e' (public exponent).</value>
+    </data>
+    <data name="RsaSignMissingD" xml:space="preserve">
+        <value>Generate signature failed: missing required private key parameter 'd' (private exponent).</value>
+    </data>
+    <data name="RsaSignMissingP" xml:space="preserve">
+        <value>Generate signature failed: missing required private key parameter 'p' (first prime factor).</value>
+    </data>
+    <data name="RsaSignMissingQ" xml:space="preserve">
+        <value>Generate signature failed: missing required private key parameter 'q' (second prime factor).</value>
+    </data>
+    <data name="RsaSignMissingDp" xml:space="preserve">
+        <value>Generate signature failed: missing required private key parameter 'dp'.</value>
+    </data>
+    <data name="RsaSignMissingDq" xml:space="preserve">
+        <value>Generate signature failed: missing required private key parameter 'dq'.</value>
+    </data>
+    <data name="RsaSignMissingQi" xml:space="preserve">
+        <value>Generate signature failed: missing required private key parameter 'qi'.</value>
+    </data>
+    <data name="RsaVerifyDataCannotBeEmpty" xml:space="preserve">
+        <value>Original data cannot be empty.</value>
+    </data>
+    <data name="RsaVerifySignatureCannotBeEmpty" xml:space="preserve">
+        <value>Signature data cannot be empty.</value>
+    </data>
+    <data name="RsaVerifyMissingN" xml:space="preserve">
+        <value>Verify signature failed: missing required public key parameter 'n' (modulus).</value>
+    </data>
+    <data name="RsaVerifyMissingE" xml:space="preserve">
+        <value>Verify signature failed: missing required public key parameter 'e' (public exponent).</value>
+    </data>
+    
+    <!-- EcJsonWebKey -->
+    <data name="EcComputeThumbprintMissingKty" xml:space="preserve">
+        <value>Compute thumbprint failed: missing required key type property 'kty'.</value>
+    </data>
+    <data name="EcComputeThumbprintMissingCrv" xml:space="preserve">
+        <value>Compute thumbprint failed: missing required key parameter 'crv' (curve).</value>
+    </data>
+    <data name="EcComputeThumbprintMissingX" xml:space="preserve">
+        <value>Compute thumbprint failed: missing required key parameter 'x'.</value>
+    </data>
+    <data name="EcComputeThumbprintMissingY" xml:space="preserve">
+        <value>Compute thumbprint failed: missing required key parameter 'y'.</value>
+    </data>
+    <data name="EcSignDataCannotBeEmpty" xml:space="preserve">
+        <value>Data to sign cannot be empty.</value>
+    </data>
+    <data name="EcSignMissingCrv" xml:space="preserve">
+        <value>Generate signature failed: missing required private key parameter 'crv' (curve).</value>
+    </data>
+    <data name="EcSignMissingX" xml:space="preserve">
+        <value>Generate signature failed: missing required private key parameter 'x'.</value>
+    </data>
+    <data name="EcSignMissingY" xml:space="preserve">
+        <value>Generate signature failed: missing required private key parameter 'y'.</value>
+    </data>
+    <data name="EcSignMissingD" xml:space="preserve">
+        <value>Generate signature failed: missing required private key parameter 'd' (private key).</value>
+    </data>
+    <data name="EcVerifyDataCannotBeEmpty" xml:space="preserve">
+        <value>Original data cannot be empty.</value>
+    </data>
+    <data name="EcVerifySignatureCannotBeEmpty" xml:space="preserve">
+        <value>Signature data cannot be empty.</value>
+    </data>
+    <data name="EcVerifyMissingCrv" xml:space="preserve">
+        <value>Verify signature failed: missing required public key parameter 'crv' (curve).</value>
+    </data>
+    <data name="EcVerifyMissingX" xml:space="preserve">
+        <value>Verify signature failed: missing required public key parameter 'x'.</value>
+    </data>
+    <data name="EcVerifyMissingY" xml:space="preserve">
+        <value>Verify signature failed: missing required public key parameter 'y'.</value>
+    </data>
+    
+    <!-- EnumExtensions -->
+    <data name="EnumNameNotFound" xml:space="preserve">
+        <value>Enum name not found.</value>
+    </data>
+    <data name="EnumDisplayNameNotFound" xml:space="preserve">
+        <value>Enum display name not found.</value>
+    </data>
+    <data name="EnumDisplayDescriptionNotFound" xml:space="preserve">
+        <value>Enum display description not found.</value>
+    </data>
+    
+    <!-- OrderIdentifier -->
+    <data name="UnsupportedIdentifierType" xml:space="preserve">
+        <value>Unsupported identifier type: {0}</value>
+    </data>
+    
+    <!-- Contact -->
+    <data name="InvalidContactFormat" xml:space="preserve">
+        <value>Invalid contact format. Expected format: 'scheme:value' (e.g., 'mailto:admin@example.com')</value>
+    </data>
+    <data name="UnsupportedContactType" xml:space="preserve">
+        <value>Unsupported contact type: {0}</value>
+    </data>
+    
+    <!-- Link -->
+    <data name="LinkHeaderNullOrEmpty" xml:space="preserve">
+        <value>Link header cannot be null or empty.</value>
+    </data>
+    <data name="InvalidLinkHeaderFormat" xml:space="preserve">
+        <value>Invalid Link header format: {0}</value>
+    </data>
+    
+    <!-- NotFoundException -->
+    <data name="ResourceNotFound" xml:space="preserve">
+        <value>The requested resource could not be found.</value>
+    </data>
+</root>

@@ -1,0 +1,187 @@
+<root>
+    <resheader name="resmimetype">
+        <value>text/microsoft-resx</value>
+    </resheader>
+    <resheader name="version">
+        <value>1.3</value>
+    </resheader>
+    <resheader name="reader">
+        <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    <resheader name="writer">
+        <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    </resheader>
+    
+    <!-- BCSignerFactory -->
+    <data name="AlgorithmCannotBeEmpty" xml:space="preserve">
+        <value>算法不能为空或空白。</value>
+    </data>
+    <data name="UnsupportedJwsAlgorithm" xml:space="preserve">
+        <value>不支持的 JWS 算法: {0}</value>
+    </data>
+    <data name="UnsupportedAlgorithm" xml:space="preserve">
+        <value>不支持的算法 '{0}'。</value>
+    </data>
+    
+    <!-- DirectoryUrlNormalizer -->
+    <data name="UrlCannotBeEmpty" xml:space="preserve">
+        <value>URL不能为空</value>
+    </data>
+    <data name="InvalidUrlFormat" xml:space="preserve">
+        <value>URL格式不正确</value>
+    </data>
+    
+    <!-- OctJsonWebKey -->
+    <data name="ComputeThumbprintMissingKty" xml:space="preserve">
+        <value>计算指纹失败：缺少必要的密钥类型属性 'kty'。</value>
+    </data>
+    <data name="ComputeThumbprintMissingK" xml:space="preserve">
+        <value>计算指纹失败：缺少必要的对称密钥参数 'k'。</value>
+    </data>
+    <data name="SignDataCannotBeEmpty" xml:space="preserve">
+        <value>签名失败：待签名的数据不能为空。</value>
+    </data>
+    <data name="SignMissingK" xml:space="preserve">
+        <value>签名失败：缺少必要的对称密钥参数 'k'。</value>
+    </data>
+    <data name="VerifyDataCannotBeEmpty" xml:space="preserve">
+        <value>验证签名失败：原始数据不能为空。</value>
+    </data>
+    <data name="VerifySignatureCannotBeEmpty" xml:space="preserve">
+        <value>验证签名失败：签名数据不能为空。</value>
+    </data>
+    <data name="VerifyMissingK" xml:space="preserve">
+        <value>验证签名失败：缺少必要的对称密钥参数 'k'。</value>
+    </data>
+    
+    <!-- RsaJsonWebKey -->
+    <data name="RsaComputeThumbprintMissingKty" xml:space="preserve">
+        <value>计算指纹失败：缺少必要的密钥类型属性 'kty'。</value>
+    </data>
+    <data name="RsaComputeThumbprintMissingN" xml:space="preserve">
+        <value>计算指纹失败：缺少必要的密钥参数 'n'（模数）。</value>
+    </data>
+    <data name="RsaComputeThumbprintMissingE" xml:space="preserve">
+        <value>计算指纹失败：缺少必要的密钥参数 'e'（公钥指数）。</value>
+    </data>
+    <data name="RsaSignDataCannotBeEmpty" xml:space="preserve">
+        <value>待签名数据不能为空。</value>
+    </data>
+    <data name="RsaSignMissingN" xml:space="preserve">
+        <value>生成签名失败：缺少必要的私钥参数 'n'（模数）。</value>
+    </data>
+    <data name="RsaSignMissingE" xml:space="preserve">
+        <value>生成签名失败：缺少必要的私钥参数 'e'（公钥指数）。</value>
+    </data>
+    <data name="RsaSignMissingD" xml:space="preserve">
+        <value>生成签名失败：缺少必要的私钥参数 'd'（私有指数）。</value>
+    </data>
+    <data name="RsaSignMissingP" xml:space="preserve">
+        <value>生成签名失败：缺少必要的私钥参数 'p'（第一个素数因子）。</value>
+    </data>
+    <data name="RsaSignMissingQ" xml:space="preserve">
+        <value>生成签名失败：缺少必要的私钥参数 'q'（第二个素数因子）。</value>
+    </data>
+    <data name="RsaSignMissingDp" xml:space="preserve">
+        <value>生成签名失败：缺少必要的私钥参数 'dp'。</value>
+    </data>
+    <data name="RsaSignMissingDq" xml:space="preserve">
+        <value>生成签名失败：缺少必要的私钥参数 'dq'。</value>
+    </data>
+    <data name="RsaSignMissingQi" xml:space="preserve">
+        <value>生成签名失败：缺少必要的私钥参数 'qi'。</value>
+    </data>
+    <data name="RsaVerifyDataCannotBeEmpty" xml:space="preserve">
+        <value>原始数据不能为空。</value>
+    </data>
+    <data name="RsaVerifySignatureCannotBeEmpty" xml:space="preserve">
+        <value>签名数据不能为空。</value>
+    </data>
+    <data name="RsaVerifyMissingN" xml:space="preserve">
+        <value>验证签名失败：缺少必要的公钥参数 'n'（模数）。</value>
+    </data>
+    <data name="RsaVerifyMissingE" xml:space="preserve">
+        <value>验证签名失败：缺少必要的公钥参数 'e'（公钥指数）。</value>
+    </data>
+    
+    <!-- EcJsonWebKey -->
+    <data name="EcComputeThumbprintMissingKty" xml:space="preserve">
+        <value>计算指纹失败：缺少必要的密钥类型属性 'kty'。</value>
+    </data>
+    <data name="EcComputeThumbprintMissingCrv" xml:space="preserve">
+        <value>计算指纹失败：缺少必要的密钥参数 'crv'（曲线）。</value>
+    </data>
+    <data name="EcComputeThumbprintMissingX" xml:space="preserve">
+        <value>计算指纹失败：缺少必要的密钥参数 'x'。</value>
+    </data>
+    <data name="EcComputeThumbprintMissingY" xml:space="preserve">
+        <value>计算指纹失败：缺少必要的密钥参数 'y'。</value>
+    </data>
+    <data name="EcSignDataCannotBeEmpty" xml:space="preserve">
+        <value>待签名数据不能为空。</value>
+    </data>
+    <data name="EcSignMissingCrv" xml:space="preserve">
+        <value>生成签名失败：缺少必要的私钥参数 'crv'（曲线）。</value>
+    </data>
+    <data name="EcSignMissingX" xml:space="preserve">
+        <value>生成签名失败：缺少必要的私钥参数 'x'。</value>
+    </data>
+    <data name="EcSignMissingY" xml:space="preserve">
+        <value>生成签名失败：缺少必要的私钥参数 'y'。</value>
+    </data>
+    <data name="EcSignMissingD" xml:space="preserve">
+        <value>生成签名失败：缺少必要的私钥参数 'd'（私钥）。</value>
+    </data>
+    <data name="EcVerifyDataCannotBeEmpty" xml:space="preserve">
+        <value>原始数据不能为空。</value>
+    </data>
+    <data name="EcVerifySignatureCannotBeEmpty" xml:space="preserve">
+        <value>签名数据不能为空。</value>
+    </data>
+    <data name="EcVerifyMissingCrv" xml:space="preserve">
+        <value>验证签名失败：缺少必要的公钥参数 'crv'（曲线）。</value>
+    </data>
+    <data name="EcVerifyMissingX" xml:space="preserve">
+        <value>验证签名失败：缺少必要的公钥参数 'x'。</value>
+    </data>
+    <data name="EcVerifyMissingY" xml:space="preserve">
+        <value>验证签名失败：缺少必要的公钥参数 'y'。</value>
+    </data>
+    
+    <!-- EnumExtensions -->
+    <data name="EnumNameNotFound" xml:space="preserve">
+        <value>枚举名称未找到。</value>
+    </data>
+    <data name="EnumDisplayNameNotFound" xml:space="preserve">
+        <value>枚举显示名称未找到。</value>
+    </data>
+    <data name="EnumDisplayDescriptionNotFound" xml:space="preserve">
+        <value>枚举显示描述未找到。</value>
+    </data>
+    
+    <!-- OrderIdentifier -->
+    <data name="UnsupportedIdentifierType" xml:space="preserve">
+        <value>不支持的标识符类型: {0}</value>
+    </data>
+    
+    <!-- Contact -->
+    <data name="InvalidContactFormat" xml:space="preserve">
+        <value>无效的联系方式格式。预期格式: 'scheme:value' (例如 'mailto:admin@example.com')</value>
+    </data>
+    <data name="UnsupportedContactType" xml:space="preserve">
+        <value>不支持的联系方式类型: {0}</value>
+    </data>
+    
+    <!-- Link -->
+    <data name="LinkHeaderNullOrEmpty" xml:space="preserve">
+        <value>Link 头不能为空或为空白。</value>
+    </data>
+    <data name="InvalidLinkHeaderFormat" xml:space="preserve">
+        <value>无效的 Link 头格式: {0}</value>
+    </data>
+    
+    <!-- NotFoundException -->
+    <data name="ResourceNotFound" xml:space="preserve">
+        <value>找不到请求的资源。</value>
+    </data>
+</root>
