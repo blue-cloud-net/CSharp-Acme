@@ -265,4 +265,4 @@ tempkey.jwk
 # history files
 **/.vshistory
 
-docs/rfc/*/*.html
+docs/rfc/**/RFC-*.md
