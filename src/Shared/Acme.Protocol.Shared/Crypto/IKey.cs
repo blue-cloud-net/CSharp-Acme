@@ -1,0 +1,28 @@
+﻿namespace Acme.Protocol.Crypto;
+
+/// <summary>
+/// 密钥
+/// </summary>
+public interface IKey
+{
+    /// <summary>
+    /// 计算指纹
+    /// </summary>
+    /// <returns></returns>
+    byte[] ComputeThumbprint(IDigest? digest = null);
+
+    /// <summary>
+    /// 生成签名
+    /// </summary>
+    /// <param name="awaitSignData"></param>
+    /// <returns></returns>
+    byte[] GenerateSignature(byte[] awaitSignData);
+
+    /// <summary>
+    /// 验证签名
+    /// </summary>
+    /// <param name="awaitSignData"></param>
+    /// <param name="signature"></param>
+    /// <returns></returns>
+    bool VerifySignature(byte[] awaitSignData, byte[] signature);
+}

@@ -18,6 +18,7 @@
     <Folder Name="/src/Client/">
     </Folder>
     <Folder Name="/src/Shared/">
+        <Project Name="Acme.Protocol.Shared" Path="src\Shared\Acme.Protocol.Shared\Acme.Protocol.Shared.csproj" />
     </Folder>
     <Folder Name="/tests/" />
     <Folder Name="/tests/Shared/">
