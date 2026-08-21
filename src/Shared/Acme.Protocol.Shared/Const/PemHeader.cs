@@ -1,4 +1,4 @@
-﻿namespace Acme.Protocol.X509;
+﻿namespace Acme.Protocol.Const;
 
 /// <summary>
 /// PEM头部常量
