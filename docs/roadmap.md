@@ -10,15 +10,15 @@
 
 _目标：建立可重复构建的解决方案骨架与开发规范。_
 
-- [ ] 解决方案结构（`src/` / `tests/` / `docs/` 分离）
-- [ ] 集中式包版本管理（`Directory.Packages.props`）
-- [ ] 多框架目标配置（`common.props`：`net8/9/10` + `netstandard2.0/2.1`）
-- [ ] 测试公共配置（`common.test.props`：xUnit + FluentAssertions + Moq）
-- [ ] 编辑器规范（`.editorconfig`）
-- [ ] RFC 文档中文翻译（`docs/rfc/`：RFC 8555、7515 等）
-- [ ] 架构文档（`docs/architecture.md`）
-- [ ] 开发规范（`docs/development-guide.md`）
-- [ ] Copilot 指令文件（`.github/.copilot-instructions.md`）
+- [x] 解决方案结构（`src/` / `tests/` / `docs/` 分离）
+- [x] 集中式包版本管理（`Directory.Packages.props`）
+- [x] 多框架目标配置（`common.props`：`net8/9/10` + `netstandard2.0/2.1`）
+- [x] 测试公共配置（`common.test.props`：xUnit + FluentAssertions + Moq）
+- [x] 编辑器规范（`.editorconfig`）
+- [x] RFC 文档中文翻译（`docs/rfc/`：RFC 8555、7515 等）
+- [x] 架构文档（`docs/architecture.md`）
+- [x] 开发规范（`docs/development-guide.md`）
+- [x] Copilot 指令文件（`.github/.copilot-instructions.md`）
 
 ---
 
@@ -26,12 +26,12 @@ _目标：建立可重复构建的解决方案骨架与开发规范。_
 
 _目标：定义与 ACME 服务器通信所需的所有数据模型与异常体系。（现归属 `Acme.Protocol.Shared`）_
 
-- [ ] HTTP 请求模型（`AccountCreateModel`、`OrderCreateModel`、`OrderFinalizeModel` 等）
-- [ ] HTTP 响应模型（`DirectoryModel`、`AccountModel`、`OrderModel`、`AuthorizationModel` 等）
-- [ ] ACME 枚举（`ChallengeStatus`、`ChallengeType`、`ContactType`、`CertificateRevokeReasonCode` 等）
-- [ ] ACME 异常体系（`AcmeException` 基类及各派生异常）
-- [ ] Renewal Info 模型（`RenewalInfoModel`，RFC 8739）
-- [ ] 订单列表模型（`OrderListModel`，RFC 9447）
+- [x] HTTP 请求模型（`AccountCreateModel`、`OrderCreateModel`、`OrderFinalizeModel` 等）
+- [x] HTTP 响应模型（`DirectoryModel`、`AccountModel`、`OrderModel`、`AuthorizationModel` 等）
+- [x] ACME 枚举（`ChallengeStatus`、`ChallengeType`、`ContactType`、`CertificateRevokeReasonCode` 等）
+- [x] ACME 异常体系（`AcmeException` 基类及各派生异常）
+- [x] Renewal Info 模型（`RenewalInfoModel`，RFC 8739）
+- [x] 订单列表模型（`OrderListModel`，RFC 9447）
 
 ---
 
@@ -43,7 +43,7 @@ _目标：实现 JWK/JWS 签名及 X.509/CSR 工具，为客户端提供加密�
 - [ ] JWK 具体实现（`RsaJsonWebKey`、`EcJsonWebKey`、`OctJsonWebKey`）
 - [ ] JWS 签名器接口（`IJwkSigner`）与实现（`DefaultJwkSigner`）
 - [ ] 算法常量（`JsonWebKeyAlgorithms`）
-- [ ] X.509 工具（`CertUtils`、`PemFormatter`、`CertificateInfo`、`PemHeader`）
+- [ ] X.509 工具（`Certificate`、`PemFormatter`、`PemHeader`）
 - [ ] CSR 生成工具（`CsrUtils`、`KeyUtils`）
 - [ ] BouncyCastle 扩展（`HmacSigner`、`ISignerExtensions`、`IDigestExtensions`）
 - [ ] Base64Url JSON 转换器（`ByteArrayBase64UrlStringJsonConverter`）

@@ -42,7 +42,7 @@ dotnet pack -c Release
 | 类别                   | 规范             | 示例                  |
 | ---------------------- | ---------------- | --------------------- |
 | 类型、属性、方法、事件 | PascalCase       | `AcmeProtocolClient`  |
-| 局部变量、参数         | camelCase        | `cancellationToken`   |
+| 局部变量、参数         | camelCase        | `ct`                  |
 | 常量、静态只读字段     | PascalCase       | `DefaultTimeout`      |
 | 私有字段               | `_camelCase`     | `_httpClient`         |
 | 接口                   | `I` + PascalCase | `IAcmeProtocolClient` |
